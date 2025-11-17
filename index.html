@@ -1,1 +1,97 @@
-hi
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- base href="https://e-formular.spengergasse.at/" -->
+    <title>e-Formular der HTL Spengergasse</title>
+
+    <!-- Boostrap Admin Template -->
+    <link href="e-Formular%20der%20HTL%20Spengergasse_files/styles.css" rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="e-Formular%20der%20HTL%20Spengergasse_files/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
+    <!-- Eigene Styles -->
+    <link href="e-Formular%20der%20HTL%20Spengergasse_files/site.css" rel="stylesheet">
+
+    <script src="e-Formular%20der%20HTL%20Spengergasse_files/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="e-Formular%20der%20HTL%20Spengergasse_files/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous"></script>
+    <script src="e-Formular%20der%20HTL%20Spengergasse_files/helper.js"></script>
+
+    
+    <style>
+        div.error {
+            background-color: hsl(0 100% 95%);
+            border: 2px solid hsl(0 100% 30%)
+        }
+
+        div.valid {
+            background-color: hsl(127 100% 90%);
+            border: 2px solid hsl(127 100% 30%)
+        }
+
+        .zuname {
+            font-variant: small-caps;
+        }
+
+        #qrdata {
+            max-width: 768px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5px;
+            overflow-x: auto;
+        }
+
+        @media screen and (max-width: 576px) {
+            #qrdata th {
+                display: none;
+            }
+        }
+    </style>
+
+
+</head>
+<body class="container">
+    
+<div class="valid" id="qrdata">
+    <h3>QR Prüfung</h3>
+        <p>Der QR Code ist korrekt. Zu diesem Code wurden folgende Daten im System gefunden:</p>
+        <table class="table table-sm responsive">
+            <tbody><tr>
+                <th>Name</th>
+                <td data-label="Name">
+                    Laura Lilla <span class="zuname">Jóna</span>
+                    <small>(w)</small>
+                </td>
+            </tr>
+            <tr>
+                <th>Geburtsdatum</th>
+                <td data-label="Geburtsdatum">25.07.2003</td>
+            </tr>
+            <tr>
+                <th>Ausbildung</th>
+                <td data-label="Ausbildung">HL f. Medien - Animation</td>
+            </tr>
+            <tr>
+                <th>Klasse</th>
+                <td data-label="Klasse">
+                    <span class="d-block">5AHMNA</span>
+                </td>
+            </tr>
+            <tr>
+                <th>Schulbesuch</th>
+                <td data-label="Schulbesuch">
+                    Vom 02.09.2024 bis
+                    04.05.2025
+                </td>
+            </tr>
+        </tbody></table>
+            <span class="d-block">Frau Jóna besucht die letzte 
+lehrplanmäßig vorgesehene Schulstufe und wird sich nach positivem 
+Abschluss der abschließenden Prüfung unterziehen.</span>
+</div>
+
+
+</body></html>
